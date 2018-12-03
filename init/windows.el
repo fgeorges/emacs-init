@@ -7,6 +7,9 @@
 ;; add cmder <http://cmder.net/> bin directory to the path to access programs
 ;; like grep, find and git, relies on `fg:cmder-dir'
 
+(defvar fg:cmder-dir
+  "The directory where Cmder is install, on Windows systems.")
+
 (defvar fg:cmder-git-dir
   (concat fg:cmder-dir "vendor/git-for-windows/"))
 

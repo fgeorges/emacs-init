@@ -126,6 +126,16 @@
   ;; disable that stupid hack from restclient that prevents to use Digest Auth
   :config (ad-deactivate 'url-http-handle-authentication))
 
+(defvar fg:git-repo-dirs
+  "The list of all Git repositories on this system.
+
+A Git repo is a directory, the one containing the subdir `.git/'.
+This list is used to initialize the list of repos for Magit.  You
+can use the following command to find them all under your home
+dir:
+
+    $ find /home/me/ -name 'applypatch-ms*'")
+
 ;; depends on fg:git-repo-dirs to be defined (in init/local.el)
 (use-package magit
   :bind ("C-x g" . fg:magit-status-or-list)
