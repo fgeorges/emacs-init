@@ -75,11 +75,12 @@
 ;; TODO: To review and organize (how does this fit with use-package?)
 (setq default-input-method "latin-1-postfix")
 (column-number-mode t)
-(desktop-save-mode t)
-;; TODO: ISwitch is obsolete, what to use then?
-(iswitchb-mode t)
 (menu-bar-mode 0)
 (tool-bar-mode 0)
+(desktop-save-mode t)
+(setq-default indent-tabs-mode nil)
+;; TODO: ISwitch is obsolete, what to use then?
+(iswitchb-mode t)
 ;;(smart-yank-mode t)
 
 (use-package dired+
@@ -103,6 +104,7 @@
 
 (use-package xquery-mode
   :hook (xquery-mode . hl-todo-mode)
+  :mode "\\.\\(xq\\|xqy\\|xquery\\)\\'"
   :config
   (setq xquery-indent-size 3)
   ;; The ELPA XQuery Mode package generates a lot of errors like:
