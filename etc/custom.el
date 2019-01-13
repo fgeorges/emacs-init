@@ -1,4 +1,8 @@
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (misterioso)))
  '(custom-safe-themes
    (quote
@@ -8,8 +12,10 @@
     (use-package no-littering magit-todos minions hl-todo smart-mode-line-powerline-theme smart-mode-line xquery-mode restclient names markdown-mode magit icicles editorconfig crappy-jsp-mode cider ascii adoc-mode))))
 
 (custom-set-faces
- '(default
-    ((default :background "#002b36"))
-    ((((type w32)) :height 120 :family "Office Code Pro D")))
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((default :background "#002b36")))
  '(eshell-prompt ((t (:foreground "tan"))))
  '(org-link ((t (:inherit link :foreground "gainsboro")))))

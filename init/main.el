@@ -67,6 +67,8 @@
 
 ;;; Basics
 
+(set-face-attribute 'default nil :background "#002b36")
+
 (global-set-key [(meta down)] (lambda () (interactive) (scroll-up   1)))
 (global-set-key [(meta up)]   (lambda () (interactive) (scroll-down 1)))
 
