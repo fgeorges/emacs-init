@@ -3,6 +3,7 @@
 ;; depends on packages (or desired/common packages):
 ;;
 ;; - adoc-mode
+;; - company
 ;; - editorconfig
 ;; - hl-todo
 ;; - magit
@@ -95,6 +96,15 @@
 
 (use-package hl-todo
   :hook (emacs-lisp-mode js-mode xquery-mode))
+
+(use-package company
+  :hook ((emacs-lisp-mode js-mode xquery-mode) . company-mode))
+
+(use-package company-ml
+  :load-path "~/.emacs.d/elisp/company-ml/src"
+  :config
+  (add-to-list 'company-backends 'company-ml-sjs)
+  (add-to-list 'company-backends 'company-ml-xqy))
 
 (use-package elisp-mode)
 
