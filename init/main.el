@@ -93,17 +93,15 @@
 
 ;;; Prog languages
 
-(use-package hl-todo)
+(use-package hl-todo
+  :hook (emacs-lisp-mode js-mode xquery-mode))
 
-(use-package elisp-mode
-  :hook (emacs-lisp-mode . hl-todo-mode))
+(use-package elisp-mode)
 
 (use-package js
-  :mode ("\\.sjs\\'" . js-mode)
-  :hook (js-mode . hl-todo-mode))
+  :mode ("\\.sjs\\'" . js-mode))
 
 (use-package xquery-mode
-  :hook (xquery-mode . hl-todo-mode)
   :mode "\\.\\(xq\\|xqy\\|xquery\\)\\'"
   :config
   (setq xquery-indent-size 3)
@@ -120,9 +118,10 @@
 
 ;;; Org mode
 
-(use-package org
-  :config (require 'org-bullets)
-  :hook (org-mode . org-bullets-mode))
+(use-package org)
+
+(use-package org-bullets
+  :hook org-mode)
 
 ;;; Dev tools
 
