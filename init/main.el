@@ -95,7 +95,7 @@
 ;;; Prog languages
 
 (use-package hl-todo
-  :hook (emacs-lisp-mode js-mode xquery-mode))
+  :hook ((emacs-lisp-mode js-mode xquery-mode) . hl-todo-mode))
 
 (use-package company
   :hook ((emacs-lisp-mode js-mode xquery-mode) . company-mode))
@@ -131,7 +131,7 @@
 (use-package org)
 
 (use-package org-bullets
-  :hook org-mode)
+  :hook ((org-mode) . org-bullets-mode))
 
 ;;; Dev tools
 
