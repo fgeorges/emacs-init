@@ -97,6 +97,7 @@
 (use-package hl-todo
   :hook ((emacs-lisp-mode js-mode xquery-mode) . hl-todo-mode))
 
+(require 'subr-x) ;; required by company, and seems not to be defined if not loaded here?
 (use-package company
   :hook ((emacs-lisp-mode js-mode xquery-mode) . company-mode))
 
