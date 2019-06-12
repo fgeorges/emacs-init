@@ -52,6 +52,8 @@
 (setq auto-save-file-name-transforms
       `((".*" ,(no-littering-expand-var-file-name "auto-save/") t)))
 
+(setq server-auth-dir (no-littering-expand-var-file-name "server/"))
+
 (setq custom-file
       (no-littering-expand-etc-file-name "custom.el"))
 ;; the above tells to save custom values in a file, but not to load it
