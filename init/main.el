@@ -104,7 +104,26 @@
 
 (require 'subr-x) ;; required by company, and seems not to be defined if not loaded here?
 (use-package company
-  :hook ((emacs-lisp-mode js-mode xquery-mode) . company-mode))
+  :hook ((emacs-lisp-mode js-mode xquery-mode) . company-mode)
+  :custom-face
+  (company-preview
+   ((t (:inherit default :foreground "darkgray" :height 110))))
+  (company-preview-common
+   ((t (:inherit default :foreground "bisque1" :distant-foreground "blue"))))
+  (company-tooltip
+   ((t (:inherit company-preview :background "lightgray" :foreground "black"))))
+  (company-tooltip-selection
+   ((t (:inherit company-preview :background "steelblue" :foreground "white"))))
+  (company-tooltip-common
+   ((((type x)) (:inherit company-tooltip :foreground "white" :background "olive drab"))
+    (t (:inherit company-tooltip))))
+  (company-tooltip-common-selection
+   ((((type x)) (:inherit company-tooltip-selection :background "blue"))
+    (t (:inherit company-tooltip-selection))))
+  (company-tooltip-annotation
+   ((t (:inherit company-tooltip :foreground "saddle brown"))))
+  (company-tooltip-annotation-selection
+   ((t (:inherit company-tooltip-selection :foreground "sandy brown")))))
 
 (use-package company-ml
   :load-path "~/.emacs.d/elisp/company-ml/src"
