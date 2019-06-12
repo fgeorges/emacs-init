@@ -72,8 +72,10 @@
 
 (set-face-attribute 'default nil :background "#002b36")
 
-(global-set-key [(meta down)] (lambda () (interactive) (scroll-up   1)))
-(global-set-key [(meta up)]   (lambda () (interactive) (scroll-down 1)))
+(global-set-key (kbd "M-<down>") (lambda () (interactive) (scroll-up   1)))
+(global-set-key (kbd "M-<up>")   (lambda () (interactive) (scroll-down 1)))
+(global-set-key (kbd "C-<")      (lambda () (interactive) (other-window -1)))
+(global-set-key (kbd "C->")      (lambda () (interactive) (other-window  1)))
 
 ;; TODO: To review and organize (how does this fit with use-package?)
 (setq default-input-method "latin-1-postfix")
