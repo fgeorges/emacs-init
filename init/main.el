@@ -99,7 +99,8 @@
 ;;; Prog languages
 
 (use-package hl-todo
-  :hook ((emacs-lisp-mode js-mode xquery-mode) . hl-todo-mode))
+  :hook   ((emacs-lisp-mode js-mode xquery-mode) . hl-todo-mode)
+  :config (add-to-list 'hl-todo-keyword-faces '("DEBUG" . "#ff3c8a")))
 
 (require 'subr-x) ;; required by company, and seems not to be defined if not loaded here?
 (use-package company
