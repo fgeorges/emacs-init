@@ -89,6 +89,10 @@
 (iswitchb-mode t)
 ;;(smart-yank-mode t)
 
+;; the mode line appearance
+(smart-mode-line-enable)
+(powerline-default-theme)
+
 (use-package dired+
   :load-path "~/.emacs.d/elisp/diredp")
 
@@ -213,5 +217,4 @@ dir:
 ;;; Outro
 
 ;; Open my personal splash screen.
-;; TODO: Disable the "standard" one.
 (find-file "~/projects/fgeorges/notes/splash-screen.org")
