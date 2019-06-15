@@ -61,12 +61,13 @@
 
 ;;; Local init file
 
-;; yes, it is required (if not present, then we can assumed that the system has
-;; not been properly configured for this init system)
-(load "~/.emacs.d/init/local")
+(load "~/.emacs.d/init/local" t)
 
-(if (string-equal system-type "windows-nt")
-    (load "~/.emacs.d/init/windows"))
+(cond
+ ((string-equal system-type "darwin")
+  (load "~/.emacs.d/init/mac" t))
+ ((equal system-type "windows-nt")
+  (load "~/.emacs.d/init/windows" t)))
 
 ;;; Basics
 
