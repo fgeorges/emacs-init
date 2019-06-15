@@ -13,6 +13,7 @@ You can then use `M-x list-packages` to install the following packages (press
 `i` to mark them to install, then `x` once they are all marked):
 
 - company
+- editorconfig
 - magit
 - no-littering
 - restclient

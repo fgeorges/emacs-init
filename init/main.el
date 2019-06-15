@@ -97,6 +97,9 @@
                          (setenv "TERM" "ansi")
                          (aset ansi-color-map 1 'bold))))
 
+(use-package editorconfig
+  :config (editorconfig-mode 1))
+
 ;;; Prog languages
 
 (use-package hl-todo
