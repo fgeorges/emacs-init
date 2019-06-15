@@ -18,5 +18,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((default :background "#002b36")))
+ '(company-preview ((t (:inherit default :foreground "darkgray" :height 110))))
+ '(company-preview-common ((t (:inherit default :foreground "bisque1" :distant-foreground "blue"))))
+ '(company-tooltip ((t (:inherit company-preview :background "lightgray" :foreground "black"))))
+ '(company-tooltip-annotation ((t (:inherit company-tooltip :foreground "saddle brown"))))
+ '(company-tooltip-annotation-selection ((t (:inherit company-tooltip-selection :foreground "sandy brown"))))
+ '(company-tooltip-common ((((type x)) (:inherit company-tooltip :foreground "white" :background "olive drab")) (t (:inherit company-tooltip))))
+ '(company-tooltip-common-selection ((((type x)) (:inherit company-tooltip-selection :background "blue")) (t (:inherit company-tooltip-selection))))
+ '(company-tooltip-selection ((t (:inherit company-preview :background "steelblue" :foreground "white"))))
  '(eshell-prompt ((t (:foreground "tan"))))
  '(org-link ((t (:inherit link :foreground "gainsboro")))))
