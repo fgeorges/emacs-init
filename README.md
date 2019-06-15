@@ -15,9 +15,16 @@ You can then use `M-x list-packages` to install the following packages (press
 - company
 - editorconfig
 - magit
+- magit-todos
+- markdown-mode
 - no-littering
+- org
+- org-bullets
 - restclient
+- smart-mode-line                    (smart-mode-line-enable)
+- smart-mode-line-powerline-theme    (powerline-default-theme)
 - use-package
+- xquery-mode
 
 Install `company-ml` by cloning the repo:
 
@@ -27,3 +34,7 @@ Install `company-ml` by cloning the repo:
 
 Install `dired+` by downloading https://www.emacswiki.org/emacs/download/dired%2b.el
 to `~/.emacs.d/elisp/diredp/dired+.el`.
+
+## TODO
+
+Try and intall packages `cider` and `oook` for MarkLogic support.
