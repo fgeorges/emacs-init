@@ -14,6 +14,7 @@ You can then use `M-x list-packages` to install the following packages (press
 
 - company
 - editorconfig
+- hl-todo
 - magit
 - magit-todos
 - markdown-mode
