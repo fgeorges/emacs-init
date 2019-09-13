@@ -102,7 +102,9 @@
                          (aset ansi-color-map 1 'bold))))
 
 (use-package editorconfig
-  :config (editorconfig-mode 1))
+  :config
+  (editorconfig-mode 1)
+  (setq editorconfig-mode-lighter " ECfg"))
 
 ;;; Prog languages
 
@@ -113,6 +115,7 @@
 (require 'subr-x) ;; required by company, and seems not to be defined if not loaded here?
 (use-package company
   :hook ((emacs-lisp-mode js-mode xquery-mode) . company-mode)
+  :config (setq company-lighter " Cpny")
   :custom-face
   (company-preview
    ((t (:inherit default :foreground "darkgray" :height 110))))
@@ -139,10 +142,14 @@
   (add-to-list 'company-backends 'company-ml-sjs)
   (add-to-list 'company-backends 'company-ml-xqy))
 
-(use-package elisp-mode)
+(use-package elisp-mode
+  :hook (emacs-lisp-mode-hook . (lambda ()
+                                  (setq mode-name "ELisp"))))
 
 (use-package js
-  :mode ("\\.sjs\\'" . js-mode))
+  :mode ("\\.sjs\\'" . js-mode)
+  :hook (js-mode . (lambda ()
+                     (setq mode-name "JS"))))
 
 (use-package xquery-mode
   :mode "\\.\\(xq\\|xqy\\|xquery\\)\\'"
