@@ -12,6 +12,7 @@
 ;; - org
 ;; - org-bullets
 ;; - restclient
+;; - treemacs
 ;; - smart-mode-line                    (smart-mode-line-enable)
 ;; - smart-mode-line-powerline-theme    (powerline-default-theme)
 ;; - xquery-mode
@@ -105,6 +106,9 @@
   :config
   (editorconfig-mode 1)
   (setq editorconfig-mode-lighter " ECfg"))
+
+(use-package treemacs
+  :bind ("C-x t" . treemacs))
 
 ;;; Prog languages
 
