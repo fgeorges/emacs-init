@@ -108,7 +108,8 @@
   (setq editorconfig-mode-lighter " ECfg"))
 
 (use-package treemacs
-  :bind ("C-x t" . treemacs))
+  :bind ("C-x t" . treemacs)
+  :bind (:map treemacs-mode-map ("B" . treemacs-bookmark)))
 
 ;;; Prog languages
 

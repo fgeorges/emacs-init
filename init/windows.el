@@ -1,6 +1,10 @@
 ;; This file relies on the following variable to be defined:
 ;;
 ;; - fg:cmder-dir
+;;
+;; Under Windows, you might need this, in local.el, for Treemacs:
+;;
+;;     (setq treemacs-python-executable "C:/Python38/python.exe")
 
 ;;; Windows fix
 
