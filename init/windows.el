@@ -2,6 +2,12 @@
 ;;
 ;; - fg:cmder-dir
 
+;;; Windows fix
+
+;; on some Windows, they set CP65001 instead of UTF-8
+;; https://www.reddit.com/r/emacs/comments/98qq5k/invalid_coding_system_cp65001/e4ix4zt/
+(define-coding-system-alias 'cp65001 'utf-8)
+
 ;;; Cmder
 
 ;; add cmder <http://cmder.net/> bin directory to the path to access programs
