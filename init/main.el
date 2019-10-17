@@ -172,7 +172,15 @@
 
 ;;; Org mode
 
-(use-package org)
+(use-package org
+  :config
+  ;; use :config rather than :bind here, as we need to lookup keys
+  ;; map M-S-<down> (resp. <up>) to what's in M-<down> (today, it's org-metadown)
+  (bind-key "M-S-<down>" (lookup-key org-mode-map (kbd "M-<down>")) org-mode-map)
+  (bind-key "M-S-<up>"   (lookup-key org-mode-map (kbd "M-<up>"))   org-mode-map)
+  ;; use the global binding for M-<down> (resp. <up>): my own lambdas
+  (bind-key "M-<down>" nil org-mode-map)
+  (bind-key "M-<up>"   nil org-mode-map))
 
 (use-package org-bullets
   :hook ((org-mode) . org-bullets-mode))
