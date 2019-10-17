@@ -109,7 +109,10 @@
 
 (use-package treemacs
   :bind ("C-x t" . treemacs)
-  :bind (:map treemacs-mode-map ("B" . treemacs-bookmark)))
+  :bind (:map treemacs-mode-map
+              ("B"       . treemacs-bookmark)
+              ("<prior>" . nil)
+              ("<next>"  . nil)))
 
 ;;; Prog languages
 
