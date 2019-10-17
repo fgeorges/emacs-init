@@ -181,7 +181,9 @@
   (bind-key "M-S-<up>"   (lookup-key org-mode-map (kbd "M-<up>"))   org-mode-map)
   ;; use the global binding for M-<down> (resp. <up>): my own lambdas
   (bind-key "M-<down>" nil org-mode-map)
-  (bind-key "M-<up>"   nil org-mode-map))
+  (bind-key "M-<up>"   nil org-mode-map)
+  (bind-key "M-<down>" nil org-agenda-mode-map)
+  (bind-key "M-<up>"   nil org-agenda-mode-map))
 
 (use-package org-bullets
   :hook ((org-mode) . org-bullets-mode))
