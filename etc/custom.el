@@ -8,6 +8,8 @@
    (quote
     ("84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
  '(magit-log-arguments (quote ("--graph" "--color" "--decorate" "-n256")))
+ '(markdown-header-scaling t)
+ '(markdown-header-scaling-values (quote (1.5 1.3 1.2 1.1 1.0 1.0)))
  '(package-selected-packages
    (quote
     (treemacs treemacs-magit org org-bullets company use-package no-littering magit-todos minions hl-todo smart-mode-line-powerline-theme smart-mode-line xquery-mode restclient names markdown-mode magit icicles editorconfig crappy-jsp-mode cider ascii adoc-mode))))
@@ -27,4 +29,11 @@
  '(company-tooltip-common-selection ((((type x)) (:inherit company-tooltip-selection :background "blue")) (t (:inherit company-tooltip-selection))))
  '(company-tooltip-selection ((t (:inherit company-preview :background "steelblue" :foreground "white"))))
  '(eshell-prompt ((t (:foreground "tan"))))
- '(org-link ((t (:inherit link :foreground "gainsboro")))))
+ '(markdown-header-face-1 ((t (:inherit (font-lock-string-face markdown-header-face) :height 1.5))))
+ '(markdown-header-face-2 ((t (:inherit (font-lock-keyword-face markdown-header-face) :height 1.3))))
+ '(markdown-header-face-3 ((t (:inherit (font-lock-comment-face markdown-header-face) :height 1.2))))
+ '(markdown-header-face-4 ((t (:inherit (font-lock-variable-name-face markdown-header-face) :height 1.1))))
+ '(org-level-2 ((t (:inherit outline-2 :weight bold))))
+ '(org-level-4 ((t (:inherit outline-4 :weight bold))))
+ '(org-link ((t (:inherit link :foreground "gainsboro"))))
+ '(org-special-keyword ((t (:inherit font-lock-keyword-face :weight normal)))))
