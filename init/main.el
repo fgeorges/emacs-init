@@ -187,7 +187,13 @@
   (bind-key "M-S-<up>"   (lookup-key org-mode-map (kbd "M-<up>"))   org-mode-map)
   ;; use the global binding for M-<down> (resp. <up>): my own lambdas
   (bind-key "M-<down>" nil org-mode-map)
-  (bind-key "M-<up>"   nil org-mode-map)
+  (bind-key "M-<up>"   nil org-mode-map))
+
+(use-package org-agenda
+  :config
+  ;; see explanations for the similar config for package 'org
+  (bind-key "M-S-<down>" (lookup-key org-agenda-mode-map (kbd "M-<down>")) org-agenda-mode-map)
+  (bind-key "M-S-<up>"   (lookup-key org-agenda-mode-map (kbd "M-<up>"))   org-agenda-mode-map)
   (bind-key "M-<down>" nil org-agenda-mode-map)
   (bind-key "M-<up>"   nil org-agenda-mode-map))
 
