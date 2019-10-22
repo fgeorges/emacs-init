@@ -17,10 +17,13 @@
 ;; - smart-mode-line-powerline-theme    (powerline-default-theme)
 ;; - xquery-mode
 ;;
-;; - cider, oook              # once I can make it work
+;; - cider, oook              once I can make it work
 ;;
 ;; - dired+                   https://emacswiki.org/emacs/DiredPlus
 ;;                            ~/.emacs.d/elisp/diredp/diredp
+;;
+;; - w32-browser              only on Windows systems
+;;                            loaded automatically by dired+ (add <M-RET> to Dired)
 ;;
 ;; Font: "Office Code Pro D" (on Windows)
 ;; https://github.com/nathco/Office-Code-Pro
