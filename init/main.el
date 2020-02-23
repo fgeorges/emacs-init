@@ -12,9 +12,10 @@
 ;; - org
 ;; - org-bullets
 ;; - restclient
-;; - treemacs
 ;; - smart-mode-line                    (smart-mode-line-enable)
 ;; - smart-mode-line-powerline-theme    (powerline-default-theme)
+;; - treemacs
+;; - use-package
 ;; - xquery-mode
 ;;
 ;; - cider, oook              once I can make it work
@@ -147,11 +148,11 @@
   (company-tooltip-annotation-selection
    ((t (:inherit company-tooltip-selection :foreground "sandy brown")))))
 
-(use-package company-ml
-  :load-path "~/.emacs.d/elisp/company-ml/src"
+(use-package company-marklogic
+  :load-path "~/.emacs.d/elisp/company-marklogic/src"
   :config
-  (add-to-list 'company-backends 'company-ml-sjs)
-  (add-to-list 'company-backends 'company-ml-xqy))
+  (add-to-list 'company-backends 'company-marklogic-sjs)
+  (add-to-list 'company-backends 'company-marklogic-xqy))
 
 (use-package elisp-mode
   :hook (emacs-lisp-mode-hook . (lambda ()
