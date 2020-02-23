@@ -1,10 +1,20 @@
-;; This file relies on the following variable to be defined:
+;; This file relies on the following variable to be defined (e.g. in local.el):
 ;;
-;; - fg:cmder-dir
+;; - fg:cmder-dir, e.g. `(setq fg:cmder-dir "C:/Cmder/bin/")`
 ;;
-;; Under Windows, you might need this, in local.el, for Treemacs:
+;; You might also need something like this, in local.el, for Treemacs:
 ;;
 ;;     (setq treemacs-python-executable "C:/Python38/python.exe")
+;;
+;; Package only for Windows:
+;;
+;; - w32-browser, loaded automatically by dired+ (add <M-RET> to Dired)
+;;
+;; Use the font "Office Code Pro D" on Windows:
+;;
+;; - download the repo as ZIP: https://github.com/nathco/Office-Code-Pro
+;; - go to the dir Fonts/Office Code Pro D/OTF/
+;; - for each, double-click and then "install"
 
 ;;; Windows fix
 

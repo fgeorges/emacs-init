@@ -4,7 +4,8 @@
 
 ## Install
 
-First of all, stop Emacs: `C-x C-c`.  Then the steps are:
+First of all, stop Emacs: `C-x C-c`.  And make sure Git is installed.  Then the
+steps are:
 
 1. remove (or rename) .emacs and .emacs.d
 2. clone emacs-init to .emacs.d
@@ -49,26 +50,44 @@ instance from `*scratch*`, using `C-x C-e`):
 
       ;; install all packages, leave trace in *Messages*
       (dolist (name '(company
-              editorconfig
-              hl-todo
-              magit
-              magit-todos
-              markdown-mode
-              no-littering
-              org
-              org-bullets
-              restclient
-              smart-mode-line
-              smart-mode-line-powerline-theme
+                      editorconfig
+                      hl-todo
+                      magit
+                      magit-todos
+                      markdown-mode
+                      no-littering
+                      org
+                      org-bullets
+                      restclient
+                      smart-mode-line
+                      smart-mode-line-powerline-theme
                       treemacs
-              use-package
-              xquery-mode))
+                      use-package
+                      xquery-mode))
         (if (package-installed-p name)
         (message "Package installed: %s" name)
           (message "Package not installed %s: installing now..." name)
           (package-install name))))
 
 Then stop, and start again as normal.
+
+## Windows
+
+The windows-specific config (in `init/windows.el`) depends on something like the
+following to be in `init/local.el` (not commited to the repository).  See
+`init/windows.el` for details:
+
+    (setq fg:cmder-dir "C:/Cmder/bin/")
+    (setq treemacs-python-executable "C:/Python38/python.exe")
+
+The package `w32-browser` is convenient as well.  If installed, it is loaded
+automatically by `dired+`, and adds `<M-RET>` to Dired.
+
+Install the font "Office Code Pro D" on Windows:
+
+- download the repo as ZIP: https://github.com/nathco/Office-Code-Pro
+- go to the dir `Fonts/Office Code Pro D/OTF/`
+- for each, double-click and then "install"
 
 ## TODO
 

@@ -1,6 +1,6 @@
 ;; .emacs.d/init/main - fgeorges
 ;;
-;; depends on packages (or desired/common packages):
+;; Depends on packages (or desired/common packages):
 ;;
 ;; - adoc-mode
 ;; - company
@@ -18,18 +18,10 @@
 ;; - use-package
 ;; - xquery-mode
 ;;
+;; And also:
+;;
 ;; - cider, oook              once I can make it work
-;;
 ;; - dired+                   https://emacswiki.org/emacs/DiredPlus
-;;                            ~/.emacs.d/elisp/diredp/diredp
-;;
-;; - w32-browser              only on Windows systems
-;;                            loaded automatically by dired+ (add <M-RET> to Dired)
-;;
-;; Font: "Office Code Pro D" (on Windows)
-;; https://github.com/nathco/Office-Code-Pro
-;; download the repo as ZIP, go to Fonts/Office Code Pro D/OTF, and for each,
-;; double-click and then "install"
 ;;
 ;; In case I have problems with mlproj in eshell or ansi-term, have a look at:
 ;;
@@ -98,6 +90,7 @@
 (smart-mode-line-enable)
 (powerline-default-theme)
 
+;; https://emacswiki.org/emacs/DiredPlus
 (use-package dired+
   :load-path "~/.emacs.d/elisp/diredp")
 
