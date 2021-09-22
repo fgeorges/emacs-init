@@ -220,7 +220,6 @@ dir:
         (magit-status)
       (magit-outside-git-repo (magit-list-repositories))))
   :config
-  (global-magit-file-mode 1)
   (setq magit-repository-directories
 	(mapcar
 	 (lambda (proj) (cons proj 0))
