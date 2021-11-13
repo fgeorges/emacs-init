@@ -210,6 +210,9 @@ dir:
 
     $ find /home/me/ -name 'applypatch-ms*'")
 
+;; make sure to store necessary Forge tokens for Magit, see:
+;; https://magit.vc/manual/ghub/Storing-a-Token.html
+;;
 ;; depends on fg:git-repo-dirs to be defined (in init/local.el)
 (use-package magit
   :bind ("C-x g" . fg:magit-status-or-list)
