@@ -29,6 +29,7 @@
  '(company-tooltip-common-selection ((((type x)) (:inherit company-tooltip-selection :background "blue")) (t (:inherit company-tooltip-selection))))
  '(company-tooltip-selection ((t (:inherit company-preview :background "steelblue" :foreground "white"))))
  '(eshell-prompt ((t (:foreground "tan"))))
+ '(fixed-pitch ((t nil)))
  '(markdown-header-face-1 ((t (:inherit (font-lock-string-face markdown-header-face) :height 1.5))))
  '(markdown-header-face-2 ((t (:inherit (font-lock-keyword-face markdown-header-face) :height 1.3))))
  '(markdown-header-face-3 ((t (:inherit (font-lock-comment-face markdown-header-face) :height 1.2))))
