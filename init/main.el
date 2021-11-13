@@ -210,8 +210,9 @@ dir:
 
     $ find /home/me/ -name 'applypatch-ms*'")
 
-;; make sure to store necessary Forge tokens for Magit, see:
-;; https://magit.vc/manual/ghub/Storing-a-Token.html
+;; make sure to store necessary tokens for Magit, from various forges, see:
+;; https://magit.vc/manual/ghub/Storing-a-Token.html, you can also use:
+;; `git config --global credential.helper cache`
 ;;
 ;; depends on fg:git-repo-dirs to be defined (in init/local.el)
 (use-package magit
