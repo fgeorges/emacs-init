@@ -94,6 +94,9 @@
 (add-to-list 'auto-mode-alist '("\\.xar\\'" . archive-mode))
 (add-to-list 'auto-mode-alist '("\\.xaw\\'" . archive-mode))
 
+;; Dired format (what on systems without `ls`, or without `GNU ls`?)
+(setq dired-listing-switches "-aolhv --group-directories-first --time-style=long-iso")
+
 ;; https://emacswiki.org/emacs/DiredPlus
 (use-package dired+
   :load-path "~/.emacs.d/elisp/diredp")
