@@ -90,6 +90,10 @@
 (smart-mode-line-enable)
 (powerline-default-theme)
 
+;; custom extensions
+(add-to-list 'auto-mode-alist '("\\.xar\\'" . archive-mode))
+(add-to-list 'auto-mode-alist '("\\.xaw\\'" . archive-mode))
+
 ;; https://emacswiki.org/emacs/DiredPlus
 (use-package dired+
   :load-path "~/.emacs.d/elisp/diredp")
