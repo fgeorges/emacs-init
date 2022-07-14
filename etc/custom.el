@@ -12,7 +12,7 @@
  '(markdown-header-scaling-values (quote (1.5 1.3 1.2 1.1 1.0 1.0)))
  '(package-selected-packages
    (quote
-    (treemacs treemacs-magit org org-bullets company use-package no-littering magit-todos minions hl-todo smart-mode-line-powerline-theme smart-mode-line xquery-mode restclient names markdown-mode magit icicles editorconfig crappy-jsp-mode cider ascii adoc-mode))))
+    (edit-indirect gradle-mode web-mode yaml-mode treemacs treemacs-magit org org-bullets company use-package no-littering magit-todos minions hl-todo smart-mode-line-powerline-theme smart-mode-line xquery-mode restclient names markdown-mode magit icicles editorconfig crappy-jsp-mode cider ascii adoc-mode))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
