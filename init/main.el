@@ -69,6 +69,10 @@
 ;;; Basics
 
 (set-face-attribute 'default nil :background "#002b36")
+;;(set-cursor-color "White")
+;; TODO: Check that this does not get overriden at startup with a subsequent config.
+;; Seems like it gets back to black (on black...)
+(set-mouse-color "white")
 
 (global-set-key (kbd "M-<down>") (lambda () (interactive) (scroll-up   1)))
 (global-set-key (kbd "M-<up>")   (lambda () (interactive) (scroll-down 1)))
@@ -147,6 +151,9 @@
    ((t (:inherit company-tooltip :foreground "saddle brown"))))
   (company-tooltip-annotation-selection
    ((t (:inherit company-tooltip-selection :foreground "sandy brown")))))
+
+(use-package company-box
+  :hook (company-mode . company-box-mode))
 
 (use-package company-marklogic
   :load-path "~/.emacs.d/elisp/company-marklogic/src"

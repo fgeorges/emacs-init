@@ -3,16 +3,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (misterioso)))
+ '(custom-enabled-themes '(misterioso))
  '(custom-safe-themes
-   (quote
-    ("84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
- '(magit-log-arguments (quote ("--graph" "--color" "--decorate" "-n256")))
+   '("84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default))
+ '(magit-log-arguments '("--graph" "--color" "--decorate" "-n256"))
  '(markdown-header-scaling t)
- '(markdown-header-scaling-values (quote (1.5 1.3 1.2 1.1 1.0 1.0)))
+ '(markdown-header-scaling-values '(1.5 1.3 1.2 1.1 1.0 1.0))
  '(package-selected-packages
-   (quote
-    (edit-indirect gradle-mode web-mode yaml-mode treemacs treemacs-magit org org-bullets company use-package no-littering magit-todos minions hl-todo smart-mode-line-powerline-theme smart-mode-line xquery-mode restclient names markdown-mode magit icicles editorconfig crappy-jsp-mode cider ascii adoc-mode))))
+   '(git-modes svg-clock company-box edit-indirect gradle-mode web-mode yaml-mode treemacs treemacs-magit org org-bullets company use-package no-littering magit-todos minions hl-todo smart-mode-line-powerline-theme smart-mode-line xquery-mode restclient names markdown-mode magit icicles editorconfig crappy-jsp-mode cider ascii adoc-mode)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
