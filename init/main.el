@@ -166,7 +166,7 @@
                                   (setq mode-name "ELisp"))))
 
 (use-package js
-  :mode ("\\.sjs\\'" . js-mode)
+  :mode ("\\.[ms]js\\'" . js-mode)
   :hook (js-mode . (lambda ()
                      (setq mode-name "JS"))))
 
@@ -184,6 +184,13 @@
   (defface nxml-tag-slash-face () "")
   (defface nxml-element-colon-face () "")
   (defface nxml-element-local-name-face () ""))
+
+;;; Markdown mode
+
+(use-package markdown
+  :config
+  (add-to-list 'markdown-code-lang-modes '("xqy" . xquery-mode)))
+
 
 ;;; Org mode
 
