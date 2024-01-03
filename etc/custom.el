@@ -10,7 +10,7 @@
  '(markdown-header-scaling t)
  '(markdown-header-scaling-values '(1.5 1.3 1.2 1.1 1.0 1.0))
  '(package-selected-packages
-   '(git-modes svg-clock company-box edit-indirect gradle-mode web-mode yaml-mode treemacs treemacs-magit org org-bullets company use-package no-littering magit-todos minions hl-todo smart-mode-line-powerline-theme smart-mode-line xquery-mode restclient names markdown-mode magit icicles editorconfig crappy-jsp-mode cider ascii adoc-mode)))
+   '(idle-highlight-mode ttl-mode docker-tramp sparql-mode git-modes svg-clock company-box edit-indirect gradle-mode web-mode yaml-mode treemacs treemacs-magit org org-bullets company use-package no-littering magit-todos minions hl-todo smart-mode-line-powerline-theme smart-mode-line xquery-mode restclient names markdown-mode magit icicles editorconfig crappy-jsp-mode cider ascii adoc-mode)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

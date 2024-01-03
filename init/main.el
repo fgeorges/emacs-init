@@ -78,6 +78,7 @@
 (global-set-key (kbd "M-<up>")   (lambda () (interactive) (scroll-down 1)))
 (global-set-key (kbd "C-<")      (lambda () (interactive) (other-window -1)))
 (global-set-key (kbd "C->")      (lambda () (interactive) (other-window  1)))
+(put 'scroll-left 'disabled nil)
 
 ;; TODO: To review and organize (how does this fit with use-package?)
 (setq default-input-method "latin-1-postfix")

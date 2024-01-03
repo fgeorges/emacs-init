@@ -1,4 +1,5 @@
-elisp
-elpa
-transient
-var
+elisp/
+elpa/
+transient/
+var/
+eln-cache/
