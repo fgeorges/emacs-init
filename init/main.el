@@ -188,9 +188,15 @@
 ;;; Markdown mode
 
 (use-package markdown
+  :hook   ((emacs-lisp-mode js-mode python-mode xquery-mode) . hl-todo-mode)
   :config
-  (add-to-list 'markdown-code-lang-modes '("xqy" . xquery-mode)))
-
+  (add-to-list 'markdown-code-lang-modes '("mjs"  . javascript-mode))
+  (add-to-list 'markdown-code-lang-modes '("sjs"  . javascript-mode))
+  (add-to-list 'markdown-code-lang-modes '("xqy"  . xquery-mode))
+  (add-to-list 'markdown-code-lang-modes '("http" . restclient-mode))
+  ;; fontify fenced blocks by default, `C-c C-x C-f` to toggle (use `C-c '` to edit a
+  ;; fenced block in a dedicated buffer)
+  (setq markdown-fontify-code-blocks-natively t))
 
 ;;; Org mode
 
