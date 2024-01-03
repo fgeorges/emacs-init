@@ -118,9 +118,12 @@
 (use-package treemacs
   :bind ("C-x t" . treemacs)
   :bind (:map treemacs-mode-map
-              ("B"       . treemacs-bookmark)
-              ("<prior>" . nil)
-              ("<next>"  . nil)))
+         ("B" . treemacs-bookmark))
+  :config
+  (unbind-key (kbd "<prior>")  treemacs-mode-map)
+  (unbind-key (kbd "<next>")   treemacs-mode-map)
+  (unbind-key (kbd "<M-up>")   treemacs-mode-map)
+  (unbind-key (kbd "<M-down>") treemacs-mode-map))
 
 ;;; Prog languages
 
