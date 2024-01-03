@@ -63,6 +63,8 @@
 (cond
  ((string-equal system-type "darwin")
   (load "~/.emacs.d/init/mac" t))
+ ((string-equal system-type "gnu/linux")
+  (load "~/.emacs.d/init/linux" t))
  ((string-equal system-type "windows-nt")
   (load "~/.emacs.d/init/windows" t)))
 
